@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+if (window.matchMedia && window.matchMedia('(max-device-width: 390px)').matches) {
+	viewport = document.querySelector('meta[name=viewport]');
+	if (viewport) viewport.setAttribute('content', 'width=390');
+}
+</script>
+<title>Marco's Online Tone Generator - generate pure tones of any frequency</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="css/tone-generator.mini.css">
+<link rel="shortcut icon" href="images/tone-generator-favicon.png">
+<link rel="apple-touch-icon" href="images/tone-generator-apple.png" sizes="180x180">
+<script src="js/frequency-generator.mini.js"></script>
+
+<script>
+if (getCookie("ab-otgbanad") !== "y") { //user removed ads (does not include adblock)
+	window.AD_PLACEMENT = 2;
+	window.AD_FREE = false;
+	document.write('<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script>');
+} else window.AD_FREE = true;
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1DSZFLKR1X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1DSZFLKR1X', { cookie_domain: 'www.szynalski.com', cookie_path: '/tone-generator' });
+/*!
+     * jQuery UI Touch Punch 0.2.3
+     * Copyright 2011–2014, Dave Furfero
+     * Dual licensed under the MIT or GPL Version 2 licenses.
+     */
+    !function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent("MouseEvents");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch="ontouchend"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouseDestroy;b._touchStart=function(a){var b=this;!e&&b._mouseCapture(a.originalEvent.changedTouches[0])&&(e=!0,b._touchMoved=!1,f(a,"mouseover"),f(a,"mousemove"),f(a,"mousedown"))},b._touchMove=function(a){e&&(this._touchMoved=!0,f(a,"mousemove"))},b._touchEnd=function(a){e&&(f(a,"mouseup"),f(a,"mouseout"),this._touchMoved||f(a,"click"),e=!1)},b._mouseInit=function(){var b=this;b.element.bind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),c.call(b)},b._mouseDestroy=function(){var b=this;b.element.unbind({touchstart:a.proxy(b,"_touchStart"),touchmove:a.proxy(b,"_touchMove"),touchend:a.proxy(b,"_touchEnd")}),d.call(b)}}}(jQuery);
+</script>
+</head>
+<body>
+<script>writeCookieMessage("privacy.htm");</script>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+<symbol id="svg-Lspeaker-icon" viewBox="0 0 40 38">	
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-84.748 -76.596)"><g transform="matrix(-.28222 0 0 .28222 848.8 -82.759)" fill="inherit"><path d="m2645.1 696.21v-131.56l-32.764 33.843h-41.068l0.028 63.916 41.054-0.0201z" fill-rule="evenodd"></path><path transform="matrix(.9375 0 0 .9375 -5.8967 -8.2345)" d="m2852 645.99-9.1192 8.916c6.4339 6.5121 10.396 15.473 10.396 25.402 0 10.415-4.3627 19.759-11.361 26.334l9.125 8.9199c9.276-8.9155 15.072-21.426 15.072-35.254 0-13.348-5.3964-25.473-14.113-34.318z" fill-rule="evenodd"></path><path transform="matrix(.9375 0 0 .9375 -5.8967 -8.2345)" d="m2872 626.46-9.1211 8.916c11.358 11.549 18.361 27.396 18.361 44.926 0 18.014-7.3974 34.248-19.314 45.869l9.127 8.9199c14.198-13.957 23.023-33.36 23.023-54.789 0-20.947-8.4354-39.96-22.076-53.842z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000"></path></g></g></svg>
+</symbol>
+<symbol id="svg-Rspeaker-icon" viewBox="0 0 40 38">
+	<use xlink:href="#svg-Lspeaker-icon" width="40" transform="translate(40 0) scale(-1,1)"></use>
+</symbol>
+<symbol id="svg-balance-icon" viewBox="0 0 92 38">
+	<use xlink:href="#svg-Lspeaker-icon" width="40"></use>
+	<use xlink:href="#svg-Rspeaker-icon" width="40" transform="translate(48 0)"></use>
+</symbol>
+</svg>
+
+<div id="wrapper">
+<h1>Marco's Online Tone Generator</h1>
+
+<div id="generator-ui">
+
+<button class="button" id="play-button" title="Play/Stop [Space]" tabindex="10">Play</button>
+<span id="play-indicator" class="stopped"></span>
+
+<a class="support-link" href="#support">Support this site »</a>
+
+<div id="slider" style="margin: 40px 0px 18px 0px"></div>
+<div class="controls">
+    <span class="control-group">
+        <label id="volume-slider-label"></label>
+        <span id="volume-slider"></span>
+        <span id="volume-readout" style="margin-right: 20px"></span>
+		<button id="balance-control" title="balance" tabindex="40"><svg viewBox="0 0 92 38"><use id="balance-control-L-speaker-icon" xlink:href="#svg-Lspeaker-icon" width="40"></use><use id="balance-control-R-speaker-icon" xlink:href="#svg-Rspeaker-icon" width="40" transform="translate(48 0)"></use></svg></button>
+        <span class="separator" style="margin-right: 55px"></span>
+    </span>
+    <span class="control-group">
+        <button class="small-button" id="octave-down-button" title="− 1 octave (frequency ÷ 2)" style="margin-right: 10px" tabindex="60">×½</button>
+        <button class="freq-button" id="freq-down-button" title="– 1 Hz [Shift+←]" tabindex="70"></button>
+        <span id="freq-readout" tabindex="80"></span>
+        <button class="freq-button" id="freq-up-button" title="+ 1 Hz [Shift+→]" tabindex="90"></button>
+        <button class="small-button" id="octave-up-button" title="+ 1 octave (frequency × 2)" style="margin-left: 10px;" tabindex="100">×2</button>
+		<span class="separator"></span>
+    </span>
+	<span class="control-group">
+        <label id="note-selector-label"></label>
+		<button name="note-selector" id="note-selector" title="note selector" style="width: 110px;" tabindex="110"></button>
+	</span>
+	<span class="control-group" style="margin-right: 0px">
+		<button name="wave-selector" id="wave-selector" title="wave type selector" style="width: 31.5px; margin-right: 20px; padding-left: 5px;" tabindex="300"></button>
+		<button name="get-link" id="get-link" tabindex="310">Copy link</button>
+	</span>	
+</div>
+
+</div>
