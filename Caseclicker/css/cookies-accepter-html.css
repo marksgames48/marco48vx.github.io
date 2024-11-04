@@ -1,0 +1,34 @@
+#cookie-accepter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 2px #0002;
+  color: #fff;
+}
+
+#cookie-accepter * {
+  color: #fff;
+  flex-grow: initial;
+}
+
+#cookie-accepter > * {
+  margin: 4px;
+}
+
+#cookie-accepter img {
+  height: 64px;
+}
+
+#cookie-accepter button {
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  background: #444;
+  cursor: pointer;
+}
