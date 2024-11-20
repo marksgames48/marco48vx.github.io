@@ -5,8 +5,8 @@ var itemCounter = 0;
 var fps = 15;
 
 var money = 7.50;
-var currentCase = "case2";
-var acceptMoneyPerClick = 0.1;
+var currentCase = "case1";
+var acceptMoneyPerClick = 167777;
 
 
 
@@ -17,12 +17,12 @@ var acceptMoneyPerClick = 0.1;
 
 
 //sorting: by money, rarity
-var popup = true;
+var popup = false;
 
 var inventory = {};
 var jackpotInventory = {};
 
-var inventoryMax = 50;
+var inventoryMax = 16777;
 var inventoryCurrent = 0;
 
 var keyPrice = 2.50;
@@ -205,6 +205,16 @@ var cases = {
         name: "Desert Eagle | Hypnotic",
         price: 11.78,
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PLJTitH_si_k4-0m_7zO6_ummpD78A_0rzApNrw3FayqUs-YjqgIoWccVVvZAzQqVfqwr_u0JDpup3LynFhuT5iuyj9I0M0JQ"
+      },
+      weap3: {
+        name: "Razor Blade",
+        price: 16777.77,
+        img: "https://marco48vx.github.io/images/IMG_0541-removebg-preview.png"
+      },
+      weap4: {
+        name: "Razor Blade 2",
+        price: 9999999999.98,
+        img: "https://marco48vx.github.io/images/IMG_0541-removebg-preview.png"
       }
     },
     covert: {
