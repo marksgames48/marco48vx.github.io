@@ -5,8 +5,8 @@ var itemCounter = 0;
 var fps = 15;
 
 var money = 7.50;
-var currentCase = "case2";
-var acceptMoneyPerClick = 0.1;
+var currentCase = "case1";
+var acceptMoneyPerClick = 167777;
 
 
 
@@ -17,12 +17,12 @@ var acceptMoneyPerClick = 0.1;
 
 
 //sorting: by money, rarity
-var popup = true;
+var popup = false;
 
 var inventory = {};
 var jackpotInventory = {};
 
-var inventoryMax = 50;
+var inventoryMax = 16777;
 var inventoryCurrent = 0;
 
 var keyPrice = 2.50;
@@ -556,6 +556,11 @@ var cases = {
         name: "USP-S | Torque",
         price: 0.24,
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8jkIbTWhG5C-8xnteXI8oTht1i1uRQ5fWDyd9LAdQ4_MgzQqVm7wey918TuupufynUw6Sd05C2MyRfmgBgfbuBxxavJa8F12Qc"
+      },
+      weap1: {
+        name: "bear",
+        price: 10000000000,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbupIgthwczLZAJF7dC_mIGZqOf1Ia_YlWdU-_p8j-3I4IHKhFWmrBZyMT-gcIHDdg42Y1mG8wS2kLvo1pXuupvOnSdgsyIg43iLn0Hj1ElJOvsv26IIRmYCig"
       }
     },
     restricted: {
