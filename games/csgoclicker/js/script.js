@@ -207,7 +207,7 @@ var cases = {
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposr-kLAtl7PLJTitH_si_k4-0m_7zO6_ummpD78A_0rzApNrw3FayqUs-YjqgIoWccVVvZAzQqVfqwr_u0JDpup3LynFhuT5iuyj9I0M0JQ"
       },
       weap3: {
-        name: Razor Blade",
+        name: "Razor Blade",
         price: 16777.77,
         img: "https://marco48vx.github.io/images/IMG_0541-removebg-preview.png"
       }
