@@ -586,9 +586,9 @@ var cases = {
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovrG1eVcwg8zJYAJSvozmxL-JmPj5DLfYkWNF18lwmO7Eu9-sjgTlqUM-a2-hI4-QIFNvZF7T-lG6wuy50MXq7svAynZiv3V34HfD30vgvQ9NEX0"
       },
       weap6: {
-        name: "MONEY",
+        name: "bear",
         price:381994291291.99,
-        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopb3wflFfwPz3YShQ_NCzq4yCkP_gDLfQhGxUppEl3rGSptmjigfn_0dqZTigdoDAdQ4_YV3XrlnoyOi-gpXv7p7OzyR9-n51Wu8Hu6Y"
+        img: "https://marco48vx.github.io/images/bear.webp"
       }
     },
     classified: {
