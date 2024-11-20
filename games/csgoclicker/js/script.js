@@ -1175,18 +1175,19 @@ var jackpotAI = {
   bot11: ["seif.", 4, "https://i.imgur.com/gcieULF.png"],
   bot12: ["Plebeian", 5, "https://i.imgur.com/ZjMTocK.png"],
   bot13: ["buckETS | Trading", 5, "https://i.imgur.com/wSVK1bt.png"],
-  bot14: ["banned", 6, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/57/575daf48a20828cb6470193b7067d2782aa5ff0f_full.jpg"],
-  bot15: ["Roflzilla", 6, "https://i.imgur.com/prnsggZ.png"],
-  bot16: ["Jainxu", 7, "https://i.imgur.com/nwEsAGH.png"],
-  bot17: ["Platinum (diff7)", 7, "https://i.imgur.com/BzuCWzL.png"],
-  bot18: ["sp00ky gh0stman", 8, "https://i.imgur.com/ISxQyow.png"],
-  bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
+  bot14: ["banned", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/57/575daf48a20828cb6470193b7067d2782aa5ff0f_full.jpg"],
+  bot15: ["Roflzilla", 9, "https://i.imgur.com/prnsggZ.png"],
+  bot16: ["Jainxu", 9, "https://i.imgur.com/nwEsAGH.png"],
+  bot17: ["Platinum (diff7)", 9, "https://i.imgur.com/BzuCWzL.png"],
+  bot18: ["sp00ky gh0stman", 9, "https://i.imgur.com/ISxQyow.png"],
+  bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot20: ["marcoyeetmaster", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
 };
 
 var jackpotPots = {
   low: ["bot1", "bot2", "bot3", "bot4", "bot5", "bot6", "bot7", "bot8", "bot9"],
   medium: ["bot7", "bot8", "bot9", "bot10", "bot11", "bot12", "bot13", "bot14"],
-  high: ["bot15", "bot16", "bot17", "bot18", "bot19"]
+  high: ["bot15", "bot16", "bot17", "bot18", "bot19", "bot20"]
 }
 
 
@@ -1252,7 +1253,8 @@ function jackpotStart() {
     bot16: 0,
     bot17: 0,
     bot18: 0,
-    bot19: 0
+    bot19: 0,
+    bot20: 0
   };
   var playerTickets = 0;
   var totalTickets = 0;
