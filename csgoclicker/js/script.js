@@ -1181,13 +1181,14 @@ var jackpotAI = {
   bot16: ["Jainxu", 7, "https://i.imgur.com/nwEsAGH.png"],
   bot17: ["Platinum (diff7)", 7, "https://i.imgur.com/BzuCWzL.png"],
   bot18: ["sp00ky gh0stman", 8, "https://i.imgur.com/ISxQyow.png"],
-  bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
+  bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot19: ["marcoyeetmaster", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
 };
 
 var jackpotPots = {
   low: ["bot1", "bot2", "bot3", "bot4", "bot5", "bot6", "bot7", "bot8", "bot9"],
   medium: ["bot7", "bot8", "bot9", "bot10", "bot11", "bot12", "bot13", "bot14"],
-  high: ["bot15", "bot16", "bot17", "bot18", "bot19"]
+  high: ["bot15", "bot16", "bot17", "bot18", "bot19", "bot20"]
 }
 
 
@@ -1231,7 +1232,7 @@ function jackpotStart() {
   $(".winnerIs").html("");
   jackpotInProgress = true;
   var skins = 0;
-  var maxSkins = 60;
+  var maxSkins = 16777;
   var pot = {};
   var players = [];
   var botTickets = {
@@ -1253,12 +1254,13 @@ function jackpotStart() {
     bot16: 0,
     bot17: 0,
     bot18: 0,
-    bot19: 0
+    bot19: 0,
+    bot20: 0
   };
   var playerTickets = 0;
   var totalTickets = 0;
   var jackpotItemCounter = 0;
-  var jackpotTimerCounter = 25;
+  var jackpotTimerCounter = 10;
   var depositTicker = 0;
   var AIKeys = JSON.parse(JSON.stringify(jackpotPots[jackpotDifficulty]));
 
