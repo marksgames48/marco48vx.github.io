@@ -1260,7 +1260,7 @@ function jackpotStart() {
   var playerTickets = 0;
   var totalTickets = 0;
   var jackpotItemCounter = 0;
-  var jackpotTimerCounter = 10;
+  var jackpotTimerCounter = 30;
   var depositTicker = 0;
   var AIKeys = JSON.parse(JSON.stringify(jackpotPots[jackpotDifficulty]));
 
