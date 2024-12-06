@@ -6,7 +6,7 @@ var fps = 15;
 
 var money = 7.50;
 var currentCase = "case2";
-var acceptMoneyPerClick = 15;
+var acceptMoneyPerClick = 99999999999999999999999999999999999;
 
 
 
