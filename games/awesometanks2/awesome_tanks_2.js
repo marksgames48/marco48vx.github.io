@@ -5577,7 +5577,7 @@ Math.sign || (Math.sign = function(t) {
         }(n, "_" + n);
         i.Component.Health = function() {}, i.Component.Health.prototype = {
             health: 1,
-            maxHealth: 250,
+            maxHealth: 500,
             damage: function(t) {
                 return this.alive && (this.health -= t, this.health <= 0 && this.kill()), this
             },
@@ -20014,57 +20014,57 @@ var EasyStar = function(t) {
             ultracombo: 1,
             gotcha: 15,
             fired: 15,
-            nailed: 2,
-            survivor: 2
+            nailed: 1,
+            survivor: 1
         },
         AMMO_LIMITS: {
-            shotgun: 210,
-            ricochet: 100,
-            flamethrower: 472,
-            cannon: 210,
-            shock: 3000,
-            rockets: 90,
-            laser: 3000,
-            railgun: 210,
-            mines: 40
+            shotgun: 1050,
+            ricochet: 500,
+            flamethrower: 2360,
+            cannon: 1050,
+            shock: 15000,
+            rockets: 450,
+            laser: 15000,
+            railgun: 1050,
+            mines: 200
         },
         PRICES: {
-            speed: [250, 300, 350, 400, 450],
-            turret: [250, 300, 350, 400, 450],
-            sight: [250, 300, 350, 400, 450],
-            armor: [250, 300, 350, 400, 450],
-            minigun: [0, 100, 150, 200, 250, 300],
-            shotgun: [250, 300, 350, 400, 450],
-            ricochet: [250, 300, 350, 400, 450],
-            flamethrower: [250, 300, 350, 400, 450],
-            cannon: [250, 300, 350, 400, 450],
-            shock: [250, 300, 350, 400, 450],
-            rockets: [250, 300, 350, 400, 450],
-            laser: [250, 300, 350, 400, 450],
-            railgun: [250, 300, 350, 400, 450],
-            mines: [250, 300, 350, 400, 450]
+            speed: [500, 600, 700, 800, 900],
+            turret: [500, 600, 700, 800, 900],
+            sight: [500, 600, 700, 800, 900],
+            armor: [2e3, 4e3, 8e3, 16e3, 2e4],
+            minigun: [0, 200, 300, 400, 500, 600],
+            shotgun: [2750, 500, 900, 1300, 1700, 2100],
+            ricochet: [8e3, 2500, 3e3, 3500, 4e3, 4500],
+            flamethrower: [1e4, 3e3, 4e3, 5e3, 6e3, 7e3],
+            cannon: [1e4, 3e3, 4e3, 5e3, 6e3, 7e3],
+            shock: [1e4, 3e3, 4e3, 5e3, 6e3, 7e3],
+            rockets: [1e4, 3e3, 4e3, 5e3, 6e3, 7e3],
+            laser: [28e3, 11e3, 12e3, 13e3, 14e3, 15e3],
+            railgun: [28e3, 11e3, 12e3, 13e3, 14e3, 15e3],
+            mines: [8e3, 2500, 3e3, 3500, 4e3, 4500]
         },
         AMMO_PRICES: {
-            shotgun: 25,
-            ricochet: 50,
-            flamethrower: 100,
-            cannon: 100,
-            shock: 100,
-            rockets: 100,
-            laser: 150,
-            railgun: 200,
-            mines: 150
+            shotgun: 50,
+            ricochet: 100,
+            flamethrower: 200,
+            cannon: 200,
+            shock: 200,
+            rockets: 200,
+            laser: 300,
+            railgun: 400,
+            mines: 300
         },
         AMMO_AMOUNT: {
-            shotgun: 42,
-            ricochet: 20,
-            flamethrower: 96,
-            cannon: 42,
-            shock: 600,
-            rockets: 18,
-            laser: 600,
-            railgun: 42,
-            mines: 8
+            shotgun: 21,
+            ricochet: 10,
+            flamethrower: 48,
+            cannon: 21,
+            shock: 300,
+            rockets: 9,
+            laser: 300,
+            railgun: 21,
+            mines: 4
         }
     }
 }(),
